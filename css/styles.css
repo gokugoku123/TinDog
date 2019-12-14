@@ -1,0 +1,213 @@
+/*
+ The selectors are arranged on the basis of the  highest order of preference
+hence the corresponding order follows:
+1). ID selector
+2). Class selectors
+3). Tag Selectors
+
+Each section is defined in the order as per the positioning of the html elements
+thus look at the html code for referencing and refactoring
+
+ */
+/* *******************************Top Section container and Styling ************************ */
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/*  ***************************Heading section ******************** */
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Features-Header-section */
+.feature-header {
+  padding-bottom: 1rem;
+}
+
+/* ******************************************Navigation Bar *******************************/
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+/* ***********************************Download Buttons *****************************/
+.download-button {
+  padding: 0.5rem 0.5rem;
+  margin: 1.5rem 0.5rem 1rem;
+}
+
+/* *************************************Title Image ***********************************/
+.title-img {
+  width: 60%;
+  position: absolute;
+  right: 30%;
+}
+
+/* *****************************************Rotated Image ********************************/
+.rotated {
+  transform: rotate(25deg);
+  margin: 0.5rem auto;
+}
+
+/* ***********************************Featues section(ID) ******************************/
+#features {
+  background-color: #fff;
+  position: relative;
+}
+
+/* Individual Featues */
+.feature-item {
+  padding: 3rem 2.5rem;
+}
+
+/*Fontawesome Icon Color*/
+.fa-property {
+  color: #ef8172;
+  padding-bottom: 2.5rem
+}
+
+/* Hover Image */
+.fa-property:hover {
+  color: #ff4c68;
+}
+
+/* *Feature Paragraph description */
+.feature-description {
+  font-weight: lighter;
+  color: gray;
+}
+
+/* *****************************  Testimonial Section  *************************** */
+#testimonials {
+  background-color: #ef8172;
+}
+
+/*  Testimonial images */
+.testimonial-img {
+  border-radius: 100%;
+  width: 10%;
+  padding: 0.5rem;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* **************************************Press ID Section(Testimonial) ************************ */
+#press {
+  background-color: #ef8172;
+  padding-bottom: 2.5rem;
+}
+
+/*  Testimonial static images below */
+.press-logo {
+  padding-bottom: 0.5rem 2rem 2rem;
+  margin: 1rem 2rem 1rem;
+  width: 15%
+}
+
+/* *****************************  Pricing Section  *************************** */
+#pricing {
+  padding: 5% 3%;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.pricing-text {
+  color: #000;
+}
+
+/* ***************************** Call to Action Section *************************** */
+#cta {
+  background-color: #ff4c68;
+}
+
+.cta-btn {
+  margin: auto 2rem;
+}
+
+.cta-title {
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 5%;
+}
+
+/* *****************************footer Section*************************** */
+
+.footer-icons {
+  padding: 2% 1% 3%
+}
+
+/* **************************Fontawesome Icon Color********************* */
+.facebook {
+  color: blue;
+}
+
+.instagram {
+  color: #f73466;
+}
+
+.twitter {
+  color: #00acee
+}
+
+.whatsapp {
+  color: #25d366;
+}
+
+.Copyright {
+  color: gray;
+}
+
+/* ******************************************************** */
+/* Media Query for Changing the Title images' responsiveness to mobile screen */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
+}
